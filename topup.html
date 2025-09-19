@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a href="" class="navbar-brand">TuanMuda</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link active">Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- header -->
+    <header class="bg-primary d-flex align-items-center text-white pt-3 mt-5">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-md-5">
+            <h1 class="header-title">Pilih Game <br />dan Mulai Top Up</h1>
+            <p>
+              Pilih game dan masukkan nama, ID, username, <br />
+              serta no telepon untuk memulai transaksi.
+            </p>
+            <div class="d-flex mb-3 gap-3">
+              <form action="#emel">
+                <button class="btn yellow">EMEL</button>
+              </form>
+              <form action="#epep">
+                <button class="btn yellow">EFEF</button>
+              </form>
+              <form action="#pabji">
+                <button class="btn yellow">PABJI</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <img src="assets/testi2.png" alt="Header Image" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- emel -->
+    <div
+      id="emel"
+      class="container d-flex justify-content-center align-items-center mt-5"
+    >
+      <div class="row border rounded-5 p-3 bg-white shadow box-area">
+        <div
+          class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box"
+          style="background: black"
+        >
+          <div class="featured-image mb-3">
+            <img src="assets/emel.png" class="img-fluid" style="width: 300px" />
+          </div>
+        </div>
+        <div class="col-md-6 right-box">
+          <div class="row align-items-center">
+            <div class="header-text mb-3 mt-3">
+              <h2>Mohon masukkan data berikut</h2>
+            </div>
+            <form action="sukses.html">
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control form-control-lg bg-light fs-6"
+                  placeholder="Nama"
+                  required
+                />
+              </div>
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control form-control-lg bg-light fs-6"
+                  placeholder="ID"
+                  required
+                />
+              </div>
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control form-control-lg bg-light fs-6"
+                  placeholder="Username"
+                  required
+                />
+              </div>
+              <div class="input-group mb-4">
+                <input
+                  type="number"
+                  class="form-control form-control-lg bg-light fs-6"
+                  placeholder="No Telepon"
+                  required
+                />
+              </div>
+              <div class="input-group mb-3">
+                <button class="btn btn-lg btn-dark w-100 fs-6" type="submit">
+                  Top Up Sekarang
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- efef -->
+    <div
+      id="epep"
+      class="container d-flex justify-content-center align-items-center mt-5"
+    >
+      <div class="row border rounded-5 p-3 bg-white shadow box-area">
+        <div
+          class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box"
+          style="background: black"
+        >
+          <div class="featured-image mb-3">
+            <img src="assets/efef.png" class="img-fluid" style="width: 300px" />
+          </div>
+        </div>
+        <div class="col-md-6 right-box">
+          <div class="row align-items-center">
+            <div class="header-text mb-3 mt-3">
+              <h2>Mohon masukkan data berikut</h2>
+            </div>
+            <form action="sukses.html">
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control form-control-lg bg-light fs-6"
+                  placeholder="Nama"
+                  required
+                />
+              </div>
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control form-control-lg bg-light fs-6"
+                  placeholder="ID"
+                  required
+                />
+              </div>
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control form-control-lg bg-light fs-6"
+                  placeholder="Username"
+                  required
+                />
+              </div>
+              <div class="input-group mb-4">
+                <input
+                  type="number"
+                  class="form-control form-control-lg bg-light fs-6"
+                  placeholder="No Telepon"
+                  required
+                />
+              </div>
+              <div class="input-group mb-3">
+                <button class="btn btn-lg btn-dark w-100 fs-6" type="submit">
+                  Top Up Sekarang
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- pabji -->
+    <div
+      id="pabji"
+      class="container d-flex justify-content-center align-items-center mt-5 mb-5"
+    >
+      <div class="row border rounded-5 p-3 bg-white shadow box-area">
+        <div
+          class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box"
+          style="background: black"
+        >
+          <div class="featured-image mb-3">
+            <img
+              src="assets/pubg.png"
+              class="img-fluid mt-2"
+              style="width: 300px"
+            />
+          </div>
+        </div>
+        <div class="col-md-6 right-box">
+          <div class="row align-items-center">
+            <div class="header-text mb-3 mt-3">
+              <h2>Mohon masukkan data berikut</h2>
+            </div>
+            <form action="sukses.html">
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control form-control-lg bg-light fs-6"
+                  placeholder="Nama"
+                  required
+                />
+              </div>
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control form-control-lg bg-light fs-6"
+                  placeholder="ID"
+                  required
+                />
+              </div>
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control form-control-lg bg-light fs-6"
+                  placeholder="Username"
+                  required
+                />
+              </div>
+              <div class="input-group mb-4">
+                <input
+                  type="number"
+                  class="form-control form-control-lg bg-light fs-6"
+                  placeholder="No Telepon"
+                  required
+                />
+              </div>
+              <div class="input-group mb-3">
+                <button class="btn btn-lg btn-dark w-100 fs-6" type="submit">
+                  Top Up Sekarang
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer bg-dark text-white py-3 text-center">
+      <p class="mb-0">&copy; 2025 TuanMuda. All rights reserved.</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
