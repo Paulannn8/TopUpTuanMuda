@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entertainment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <style>
+      /* Samakan ukuran semua box */
+      .box-area {
+        width: 130px !important;
+        height: 130px !important;
+        object-fit: contain;
+      }
+
+      /* Pastikan gambar di tengah dan proporsional */
+      .box-area img {
+        width: 100px !important;
+        height: auto !important;
+        display: block;
+        margin: 0 auto;
+      }
+
+      /* Sesuaikan untuk layar kecil */
+      @media (max-width: 576px) {
+        .box-area {
+          width: 100px !important;
+          height: 100px !important;
+        }
+        .box-area img {
+          width: 80px !important;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a href="" class="navbar-brand">TuanMuda</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link active">Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- header -->
+    <header class="bg-primary d-flex align-items-center text-white mt-5 pt-3">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-md-5">
+            <h1 class="header-title">
+              Pilih Aplikasi <br />dan Mulai Berlangganan
+            </h1>
+            <p>
+              Jangan lupa berlangganan aplikasi<br />
+              Entertain favoritmu disini .
+            </p>
+            <div class="d-flex mb-3 gap-3">
+              <form action="#aplikasi">
+                <button class="btn yellow">Pilih Aplikasi</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <img src="assets/testi1.png" alt="Header Image" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- content -->
+    <div
+      id="aplikasi"
+      class="content d-flex justify-content-center align-items-center gap-3 mb-5 mt-5"
+      style="margin-left: 15px; margin-right: 15px"
+    >
+      <!-- spotify -->
+      <form action="spotify.html">
+        <button style="border: none; background-color: white">
+          <div class="game d-flex justify-content-center align-items-center">
+            <div
+              class="border rounded-4 p-2 bg-white shadow box-area"
+            >
+              <div
+                class="rounded-3 d-flex justify-content-center align-items-center"
+                style="background: black; height: 100%"
+              >
+                <div class="entertain-image p-3">
+                  <img
+                    src="assets/spotify.png"
+                    class="img-fluid"
+                    style="width: 100px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </button>
+      </form>
+
+      <!-- vidio -->
+      <form action="vidio.html">
+        <button style="border: none; background-color: white">
+          <div class="game d-flex justify-content-center align-items-center">
+            <div
+              class="border rounded-4 p-2 bg-white shadow box-area"
+            >
+              <div
+                class="rounded-3 d-flex justify-content-center align-items-center"
+                style="background: black; height: 100%"
+              >
+                <div class="entertain-image p-3">
+                  <img
+                    src="assets/vidio.png"
+                    class="img-fluid"
+                    style="width: 100px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </button>
+      </form>
+
+      <!-- vision plus -->
+      <form action="vision.html">
+        <button style="border: none; background-color: white">
+          <div class="game d-flex justify-content-center align-items-center">
+            <div
+              class="border rounded-4 p-2 bg-white shadow box-area"
+              style="width: fit-content; max-width: 100%"
+            >
+              <div
+                class="rounded-3 d-flex justify-content-center align-items-center"
+                style="background: black; height: 100%"
+              >
+                <div class="entertain-image p-3">
+                  <img
+                    src="assets/vision.png"
+                    class="img-fluid"
+                    style="width: 100px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </button>
+      </form>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer bg-dark text-white py-3 text-center">
+      <p class="mb-0">&copy; 2025 TuanMuda. All rights reserved.</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

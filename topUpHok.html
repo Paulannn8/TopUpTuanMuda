@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top Up HOK</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a href="" class="navbar-brand">TuanMuda</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="topup.html" class="nav-link">TopUp</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- header -->
+    <header class="bg-dark d-flex align-items-center text-white pt-3 mt-5">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-md-5 text-md-start">
+            <h1 class="header-title">Top Up <br />HOK</h1>
+            <p>Pilih banyak Token yang <br />diinginkan dan masukkan ID.</p>
+            <div class="d-flex gap-3 mb-4">
+              <form action="#normal">
+                <button class="btn yellow">Pilih Token</button>
+              </form>
+            </div>
+          </div>
+          <div
+            class="col-md-7 mt-4 mb-5 d-flex justify-content-center justify-content-md-end"
+          >
+            <img
+              src="assets/hok.png"
+              alt="Header Image"
+              class="img-fluid"
+              style="width: 280px"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- content -->
+    <div
+      class="container-content d-flex flex-column justify-content-center mt-5 mb-5 border rounded-5 p-3 bg-white shadow box-area"
+    >
+      <!-- normal -->
+      <div id="normal" class="p-2 bg-white pt-3">
+        <h2 class="mt-3 text-center">Top Up Token</h2>
+        <div
+          class="row justify-content-center row-cols-2 row-cols-md-4 g-3 mb-4 mt-3"
+        >
+          <!-- 16 token -->
+          <div class="col d-flex justify-content-center">
+            <form class="diamondFf-option" action="#metod">
+              <button
+                id="dikit"
+                type="submit"
+                class="border-0 bg-white diamondFf-btn"
+              >
+                <div class="diamondFf-card">
+                  <div class="diamondFf-body">
+                    <img src="assets/dikit4.png" alt="" style="height: 30px" />
+                    <h3>16 Tokens</h3>
+                  </div>
+                  <div class="diamondFf-footer">Rp. 3.000</div>
+                </div>
+              </button>
+            </form>
+          </div>
+
+          <!-- 240 token -->
+          <div class="col d-flex justify-content-center">
+            <form class="diamondFf-option" action="#metod">
+              <button
+                id="sedang"
+                type="submit"
+                class="border-0 bg-white diamondFf-btn"
+              >
+                <div class="diamondFf-card">
+                  <div class="diamondFf-body">
+                    <img src="assets/sedang4.png" alt="" style="height: 30px" />
+                    <h3>240 Tokens</h3>
+                  </div>
+                  <div class="diamondFf-footer">Rp. 45.000</div>
+                </div>
+              </button>
+            </form>
+          </div>
+
+          <!-- 400 token -->
+          <div class="col d-flex justify-content-center">
+            <form class="diamondFf-option" action="#metod">
+              <button
+                id="banyak"
+                type="submit"
+                class="border-0 bg-white diamondFf-btn"
+              >
+                <div class="diamondFf-card">
+                  <div class="diamondFf-body">
+                    <img src="assets/banyak4.png" alt="" style="height: 28px" />
+                    <h3 class="mt-3">400 Tokens</h3>
+                  </div>
+                  <div class="diamondFf-footer">Rp. 75.000</div>
+                </div>
+              </button>
+            </form>
+          </div>
+
+          <!-- 2400 + 108 token -->
+          <div class="col d-flex justify-content-center">
+            <form class="diamondFf-option" action="#metod">
+              <button
+                id="melimpah"
+                type="submit"
+                class="border-0 bg-white diamondFf-btn"
+              >
+                <div class="diamondFf-card">
+                  <div class="diamondFf-body">
+                    <img
+                      src="assets/melimpah4.png"
+                      alt=""
+                      style="height: 32px"
+                    />
+                    <h3>2400 + 108 Tokens</h3>
+                  </div>
+                  <div class="diamondFf-footer">Rp. 460.000</div>
+                </div>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- metod -->
+    <div
+      id="metod"
+      class="container-content d-flex flex-column justify-content-center mt-5 mb-5 border rounded-5 p-3 bg-white shadow box-area"
+    >
+      <!-- ewallet -->
+      <div class="p-2 bg-white pt-3">
+        <h2 class="mt-3 text-center">E-Wallet & Qris</h2>
+        <div
+          class="row justify-content-center row-cols-2 row-cols-md-4 g-3 mb-4 mt-1"
+        >
+          <!-- gopay -->
+          <div class="col d-flex justify-content-center">
+            <form class="metod-option" action="#confirm">
+              <button
+                data-method="gopay"
+                type="submit"
+                class="border-0 bg-white metod-btn w-100"
+              >
+                <div class="metod-card">
+                  <div
+                    class="metod-body d-flex align-items-center justify-content-center"
+                  >
+                    <img
+                      src="assets/gopay.png"
+                      alt="Gopay"
+                      style="width: 90px"
+                    />
+                  </div>
+                  <div class="price metod-footer"></div>
+                </div>
+              </button>
+            </form>
+          </div>
+
+          <!-- dana -->
+          <div class="col d-flex justify-content-center">
+            <form class="metod-option" action="#confirm">
+              <button
+                data-method="dana"
+                type="submit"
+                class="border-0 bg-white metod-btn"
+              >
+                <div class="metod-card">
+                  <div
+                    class="metod-body d-flex align-items-center justify-content-center"
+                  >
+                    <img src="assets/dana.png" alt="" style="width: 90px" />
+                  </div>
+                  <div class="price metod-footer"></div>
+                </div>
+              </button>
+            </form>
+          </div>
+
+          <!-- ovo -->
+          <div class="col d-flex justify-content-center">
+            <form class="metod-option" action="#confirm">
+              <button
+                data-method="ovo"
+                type="submit"
+                class="border-0 bg-white metod-btn"
+              >
+                <div class="metod-card">
+                  <div
+                    class="metod-body d-flex align-items-center justify-content-center"
+                  >
+                    <img src="assets/ovo.png" alt="" style="width: 75px" />
+                  </div>
+                  <div class="price metod-footer"></div>
+                </div>
+              </button>
+            </form>
+          </div>
+
+          <!-- qris -->
+          <div class="col d-flex justify-content-center">
+            <form class="metod-option" action="#confirm">
+              <button
+                data-method="qris"
+                type="submit"
+                class="border-0 bg-white metod-btn"
+              >
+                <div class="metod-card">
+                  <div
+                    class="metod-body d-flex align-items-center justify-content-center"
+                  >
+                    <img src="assets/qris.png" alt="" style="width: 80px" />
+                  </div>
+                  <div class="price metod-footer"></div>
+                </div>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- virtual acccount -->
+      <div class="p-2 bg-white pt-3">
+        <h2 class="mt-3 text-center">Virtual Account</h2>
+        <div
+          class="row justify-content-center row-cols-2 row-cols-md-4 g-3 mb-4 mt-1"
+        >
+          <!-- bca -->
+          <div class="col d-flex justify-content-center">
+            <form class="metod-option" action="#confirm">
+              <button
+                data-method="bca"
+                type="submit"
+                class="border-0 bg-white metod-btn w-100"
+              >
+                <div class="metod-card">
+                  <div
+                    class="metod-body d-flex align-items-center justify-content-center"
+                  >
+                    <img src="assets/bca.png" alt="Gopay" style="width: 90px" />
+                  </div>
+                  <div class="price metod-footer"></div>
+                </div>
+              </button>
+            </form>
+          </div>
+
+          <!-- mandiri -->
+          <div class="col d-flex justify-content-center">
+            <form class="metod-option" action="#confirm">
+              <button
+                data-method="mandiri"
+                type="submit"
+                class="border-0 bg-white metod-btn"
+              >
+                <div class="metod-card">
+                  <div
+                    class="metod-body d-flex align-items-center justify-content-center"
+                  >
+                    <img
+                      src="assets/mandiri.png"
+                      alt=""
+                      style="width: 90px; margin-left: 15px"
+                    />
+                  </div>
+                  <div class="price metod-footer"></div>
+                </div>
+              </button>
+            </form>
+          </div>
+
+          <!-- bri -->
+          <div class="col d-flex justify-content-center">
+            <form class="metod-option" action="#confirm">
+              <button
+                data-method="bri"
+                type="submit"
+                class="border-0 bg-white metod-btn"
+              >
+                <div class="metod-card">
+                  <div
+                    class="metod-body d-flex align-items-center justify-content-center"
+                  >
+                    <img src="assets/bri.png" alt="" style="width: 100px" />
+                  </div>
+                  <div class="price metod-footer"></div>
+                </div>
+              </button>
+            </form>
+          </div>
+
+          <!-- bni -->
+          <div class="col d-flex justify-content-center">
+            <form class="metod-option" action="#confirm">
+              <button
+                data-method="bni"
+                type="submit"
+                class="border-0 bg-white metod-btn"
+              >
+                <div class="metod-card">
+                  <div
+                    class="metod-body d-flex align-items-center justify-content-center"
+                  >
+                    <img src="assets/bni.png" alt="" style="width: 80px" />
+                  </div>
+                  <div class="price metod-footer"></div>
+                </div>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- gerai -->
+      <div class="p-2 bg-white pt-3">
+        <h2 class="mt-3 text-center">Melalui Gerai</h2>
+        <div
+          class="row justify-content-center row-cols-2 row-cols-md-4 g-3 mb-4 mt-1"
+        >
+          <!-- alfamart -->
+          <div class="col d-flex justify-content-center">
+            <form class="metod-option" action="#confirm">
+              <button
+                data-method="alfamart"
+                type="submit"
+                class="border-0 bg-white metod-btn"
+              >
+                <div class="metod-card">
+                  <div
+                    class="metod-body d-flex align-items-center justify-content-center"
+                  >
+                    <img src="assets/alfamart.png" alt="" style="width: 90px" />
+                  </div>
+                  <div class="price metod-footer"></div>
+                </div>
+              </button>
+            </form>
+          </div>
+
+          <!-- indomart -->
+          <div class="col d-flex justify-content-center">
+            <form class="metod-option" action="#confirm">
+              <button
+                data-method="indomart"
+                type="submit"
+                class="border-0 bg-white metod-btn"
+              >
+                <div class="metod-card">
+                  <div
+                    class="metod-body d-flex align-items-center justify-content-center"
+                  >
+                    <img
+                      src="assets/indomaret.png"
+                      alt=""
+                      style="width: 110px"
+                    />
+                  </div>
+                  <div class="price metod-footer"></div>
+                </div>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- confirm -->
+    <div id="confirm" class="container d-flex justify-content-center mt-5 mb-5" style="width: 100%;">
+      <div class="col-lg-6 col-md-8 col-sm-12">
+        <div class="border rounded-5 p-4 bg-white shadow box-area">
+          <div class="header-text text-center mb-5">
+            <h2>Masukkan ID</h2>
+          </div>
+          <form action="sukses.html">
+            <div class="d-flex mb-4" style="gap: 10px">
+              <input
+                id="userId"
+                type="text"
+                class="form-control form-control-lg bg-light fs-6 w-100"
+                maxlength="13"
+                placeholder="User ID"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <button
+                id="topUpBtn"
+                class="btn btn-lg btn-dark w-100 fs-6"
+                type="submit"
+                disabled
+              >
+                Top Up Sekarang
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer bg-dark text-white py-3 text-center">
+      <p class="mb-0">&copy; 2025 TuanMuda. All rights reserved.</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      const typeButtons = document.querySelectorAll(".diamondFf-btn");
+      const payButtons = document.querySelectorAll(".metod-btn");
+      const topUpBtn = document.getElementById("topUpBtn");
+      const userIdInput = document.getElementById("userId");
+
+      const prices = {
+        dikit: {
+          gopay: 3000,
+          dana: 3000,
+          ovo: 3000,
+          qris: 3000,
+          bca: 4000,
+          mandiri: 4000,
+          bri: 4000,
+          bni: 4000,
+          alfamart: 4500,
+          indomart: 4500,
+        },
+        sedang: {
+          gopay: 45000,
+          dana: 45000,
+          ovo: 45000,
+          qris: 45000,
+          bca: 47500,
+          mandiri: 47500,
+          bri: 47500,
+          bni: 47500,
+          alfamart: 49000,
+          indomart: 49000,
+        },
+        banyak: {
+          gopay: 75000,
+          dana: 75000,
+          ovo: 75000,
+          qris: 75000,
+          bca: 77500,
+          mandiri: 77500,
+          bri: 77500,
+          bni: 77500,
+          alfamart: 79000,
+          indomart: 79000,
+        },
+        melimpah: {
+          gopay: 460000,
+          dana: 460000,
+          ovo: 460000,
+          qris: 460000,
+          bca: 462500,
+          mandiri: 462500,
+          bri: 462500,
+          bni: 462500,
+          alfamart: 465000,
+          indomart: 465000,
+        }
+      };
+
+      let selectedType = null;
+      let selectedPay = null;
+
+      // Pilih Diamond / Paket
+      typeButtons.forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          typeButtons.forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+
+          selectedType = btn.id;
+          updatePrices();
+          checkReady(); // cek kondisi tombol
+        });
+      });
+
+      // Pilih metode pembayaran
+      payButtons.forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          payButtons.forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+
+          selectedPay = btn.dataset.method;
+          checkReady(); // cek kondisi tombol
+        });
+      });
+
+      // Update harga sesuai pesanan yang dipilih
+      function updatePrices() {
+        const payOptions = document.querySelectorAll(".metod-card");
+
+        payOptions.forEach((opt) => {
+          const method =
+            opt.querySelector("button")?.dataset?.method ||
+            opt.closest("form")?.querySelector("button")?.dataset?.method;
+          const priceSpan = opt.querySelector(".price");
+
+          if (selectedType && prices[selectedType][method]) {
+            priceSpan.textContent =
+              "Rp. " + prices[selectedType][method].toLocaleString();
+          } else {
+            priceSpan.textContent = "";
+          }
+        });
+      }
+
+      // cek kondisi apakah tombol bisa diaktifkan
+      function checkReady() {
+        if (selectedType && selectedPay && userIdInput.value.length) {
+          topUpBtn.disabled = false;
+        } else {
+          topUpBtn.disabled = true;
+        }
+      }
+
+      // event pilih paket/diamond
+      typeButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          selectedType = btn.id;
+          checkReady();
+        });
+      });
+
+      // event pilih metode pembayaran
+      payButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          selectedPay = btn.dataset.method;
+          checkReady();
+        });
+      });
+
+      // event isi user ID
+      userIdInput.addEventListener("input", () => {
+        userIdInput.value = userIdInput.value.replace(/\D/g, ""); // hanya angka
+        if (userIdInput.value.length > 13) {
+          userIdInput.value = userIdInput.value.slice(0, 13);
+        }
+        checkReady();
+      });
+    </script>
+  </body>
+</html>

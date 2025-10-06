@@ -1,6 +1,25 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
     font-family: "Noto Sans", sans-serif;
 }
+
+  /* Pastikan konten utama mendorong footer ke bawah */
+  body > *:not(footer) {
+    flex: 1 0 auto;
+  }
+
+  /* Footer tetap di bawah */
+  footer {
+    flex-shrink: 0;
+  }
 
 h1, h2 {
     font-family: "Lora", serif;
@@ -55,6 +74,15 @@ section {
     cursor: pointer;
 }
 
+@media (max-width: 576px) {
+  #services .card-service {
+    width: 100%;  
+    max-width: 300px; 
+    margin: 0 auto;
+    min-height: 200px;
+  }
+}
+
 .card-service:hover {
     background-color: #ffd43a;
     color: #22272e;
@@ -86,4 +114,270 @@ section {
     color: #fff;
     padding: 3%;
     text-align: center;
+}
+
+.game:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.container-content {
+  width: 900px;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.diamond-card {
+  border: 1px solid rgb(162, 159, 159);
+  border-radius: 12px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 150px;
+  height: 140px;
+  text-align: center;
+  overflow: hidden;
+  text-align: start;
+  cursor: pointer;
+}
+
+.diamond-card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.diamond-btn.active .diamond-card {
+  border: 3px solid #007bff;
+  box-shadow: 0 0 10px rgba(0,123,255,0.5);
+}
+
+.metod-btn.active .metod-card {
+  border: 3px solid #007bff;
+  box-shadow: 0 0 10px rgba(0,123,255,0.5);
+}
+
+.diamond-body {
+  padding: 7px;
+  flex-grow: 1;
+}
+
+.diamond-card h3 {
+  font-size: 14px;
+  margin: 0;
+  margin-top: 13px;
+}
+
+.diamond-card p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.diamond-footer {
+  background: #222;
+  color: #fff;
+  font-size: 14px;
+  padding: 7px;
+  text-align: center;
+}
+
+.metod-card {
+  border: 1px solid rgb(162, 159, 159);
+  border-radius: 12px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 150px;
+  height: 120px;
+  text-align: center;
+  overflow: hidden;
+  text-align: start;
+  cursor: pointer;
+}
+
+.metod-card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.metod-body {
+  padding: 7px;
+  flex-grow: 1;
+}
+
+.metod-card h3 {
+  font-size: 14px;
+  margin: 0;
+  margin-top: 13px;
+}
+
+.metod-card p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.metod-footer {
+  background: #222;
+  color: #fff;
+  font-size: 14px;
+  padding: 7px;
+  text-align: center;
+}
+
+.diamondFf-card {
+  border: 1px solid rgb(162, 159, 159);
+  border-radius: 12px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 150px;
+  height: 128px;
+  text-align: center;
+  overflow: hidden;
+  text-align: start;
+  cursor: pointer;
+}
+
+.diamondFf-card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.diamondFf-btn.active .diamondFf-card {
+  border: 3px solid #007bff;
+  box-shadow: 0 0 10px rgba(0,123,255,0.5);
+}
+
+.diamondFf-body {
+  padding: 7px;
+  padding-left: 12px;
+  flex-grow: 1;
+}
+
+.diamondFf-card h3 {
+  font-size: 14px;
+  margin: 0;
+  margin-top: 13px;
+}
+
+.diamondFf-footer {
+  background: #222;
+  color: #fff;
+  font-size: 14px;
+  padding: 7px;
+  text-align: center;
+}
+
+.langganan-card {
+  border: 1px solid rgb(162, 159, 159);
+  border-radius: 12px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 150px;
+  height: 90px;
+  text-align: center;
+  overflow: hidden;
+  text-align: start;
+  cursor: pointer;
+}
+
+.langganan-card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.langganan-btn.active .langganan-card {
+  border: 3px solid #007bff;
+  box-shadow: 0 0 10px rgba(0,123,255,0.5);
+}
+
+.langganan-body {
+  padding: 7px;
+  padding-left: 12px;
+  flex-grow: 1;
+}
+
+.langganan-card h3 {
+  font-size: 14px;
+  margin: 0;
+  margin-top: 13px;
+}
+
+.langganan-footer {
+  background: #222;
+  color: #fff;
+  font-size: 14px;
+  padding: 7px;
+  text-align: center;
+}
+
+.langgananV-card {
+  border: 1px solid rgb(162, 159, 159);
+  border-radius: 12px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 150px;
+  height: 100px;
+  text-align: center;
+  overflow: hidden;
+  text-align: start;
+  cursor: pointer;
+}
+
+.langgananV-card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.langgananV-btn.active .langgananV-card {
+  border: 3px solid #007bff;
+  box-shadow: 0 0 10px rgba(0,123,255,0.5);
+}
+
+.langgananV-body {
+  padding: 7px;
+  padding-left: 12px;
+  flex-grow: 1;
+}
+
+.langgananV-card h3 {
+  font-size: 14px;
+  margin: 0;
+  margin-top: 13px;
+}
+
+.langgananV-footer {
+  background: #222;
+  color: #fff;
+  font-size: 14px;
+  padding: 7px;
+  text-align: center;
+}
+
+#topUpBtn.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Ukuran select di mobile biar tidak terlalu besar */
+@media (max-width: 768px) {
+  select.form-select {
+    font-size: 14px !important;
+    padding: 6px 8px !important;
+    height: auto !important; 
+  }
+
+  input.form-control {
+    font-size: 14px !important;
+    padding: 6px 10px !important;
+    height: auto !important;
+  }
 }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bootstrap</title>
+    <title>TuanMuda</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,6 +19,120 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <style>
+      .stat-card {
+        background-color: #f9c826;
+        color: #000;
+        border-radius: 10px;
+        padding: 20px 10px;
+        width: 120px; /* Ukuran konsisten di semua layar */
+        min-height: 100px; /* Sama tinggi */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .portfolio-card {
+        border-radius: 15px;
+        overflow: hidden;
+        background-color: #fff;
+        transition: transform 0.3s ease;
+      }
+
+      .portfolio-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .portfolio-img {
+        width: 100%;
+        height: 250px; /* batasi tinggi agar seragam */
+        object-fit: cover; /* gambar proporsional */
+      }
+
+      .portfolio-description {
+        font-size: 1rem;
+        background-color: #222;
+      }
+
+      @media (max-width: 1024px) and (min-width: 768px) {
+        /* Header */
+        header .header-title {
+          font-size: 2rem;
+        }
+
+        .stat-card {
+          width: 110px;
+          padding: 15px 5px;
+        }
+
+        header img {
+          width: 85%;
+          margin: 0 auto;
+          display: block;
+        }
+
+        /* Section Services */
+        #services .card-service {
+          padding: 1.5rem;
+        }
+
+        #services .card-service .card-text {
+          font-size: 0.9rem;
+        }
+
+        #about .row {
+          flex-direction: row !important;
+          align-items: center;
+          text-align: left;
+        }
+
+        #about .col-md-6 {
+          width: 50%;
+        }
+
+        #about img {
+          width: 80%;
+          margin: 0 auto;
+          display: block;
+        }
+
+        #about .row.text-center {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 1rem;
+        }
+
+        #about .row.text-center .col-sm-4 {
+          flex: 0 0 30%;
+          max-width: 30%;
+        }
+
+        #about .card {
+          width: 100%;
+          margin: 0;
+        }
+
+        #portfolio .col-md-3 {
+          flex: 0 0 45%;
+          max-width: 45%;
+        }
+        .portfolio-img {
+          height: 220px;
+        }
+
+        /* FAQ */
+        #faq .accordion-button {
+          font-size: 1rem;
+        }
+
+        /* Navbar */
+        .navbar-nav {
+          text-align: center;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- navbar -->
@@ -37,9 +151,6 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a href="#" class="nav-link active">Home</a>
-            </li>
             <li class="nav-item">
               <a href="#services" class="nav-link">Services</a>
             </li>
@@ -60,14 +171,14 @@
       <div class="container-fluid">
         <div class="row align-items-center">
           <div class="col-md-5">
-            <h1 class="header-title">Naik Rank <br />Tanpa Ribet</h1>
+            <h1 class="header-title">Top Up Murah<br />dan Terpercaya</h1>
             <p>
-              Serahkan pada kami! Layanan joki game terpercaya untuk berbagai
+              Serahkan pada kami! Layanan Top Up game terpercaya untuk berbagai
               game populer. Cepat, aman, dan 100% profesional.
             </p>
             <div class="d-flex mb-3">
-              <form action="joki.html">
-                <button class="btn yellow">Mulai Joki</button>
+              <form action="topup.html">
+                <button class="btn yellow">Mulai Top Up</button>
               </form>
             </div>
           </div>
@@ -86,19 +197,31 @@
             src="assets/emel.png"
             alt="Client 1"
             class="client-img img-fluid"
-            style="width: 20%"
+            style="width: 18%"
           />
           <img
             src="assets/efef.png"
             alt="Client 2"
             class="client-img img-fluid"
-            style="width: 20%"
+            style="width: 18%"
+          />
+          <img
+            src="assets/hok.png"
+            alt="Client 3"
+            class="client-img img-fluid"
+            style="width: 14%"
+          />
+          <img
+            src="assets/genshin.png"
+            alt="Client 3"
+            class="client-img img-fluid"
+            style="width: 16%"
           />
           <img
             src="assets/pubg.png"
             alt="Client 3"
             class="client-img img-fluid"
-            style="width: 15%"
+            style="width: 13%"
           />
         </div>
       </div>
@@ -109,49 +232,52 @@
       <div class="container">
         <h2 class="title text-center">Kita Juga Melayani</h2>
         <div class="row text-center">
-          <form action="topup.html" class="col-lg-3 col-sm-6 my-2">
-            <button
-              style="border: none; background-color: white"
-            >
+          <!-- TopUp -->
+          <form action="joki.html" class="col-lg-3 col-sm-6 my-2">
+            <button style="border: none; background-color: white">
               <div class="card card-service yellow py-4">
                 <div class="card-body">
-                  <i class="bi bi-cash-coin display-5"></i>
-                  <h5 class="card-title mt-3">Top Up</h5>
-                  <p class="card-text">Top up game murah dan terpercaya</p>
+                  <i class="bi bi-controller display-5"></i>
+                  <h5 class="card-title mt-3">Joki Game</h5>
+                  <p class="card-text">
+                    Naik rank tanpa ribet, cepat dan terpercaya
+                  </p>
                 </div>
               </div>
             </button>
           </form>
+
+          <!-- jb -->
           <form action="jb.html" class="col-lg-3 col-sm-6 my-2">
-            <button
-              style="border: none; background-color: white"
-            >
+            <button style="border: none; background-color: white">
               <div class="card card-service yellow py-4">
                 <div class="card-body">
-                  <i class="bi bi-basket display-5"></i>
+                  <i class="bi bi-cash-coin display-5"></i>
                   <h5 class="card-title mt-3">Jual beli akun</h5>
                   <p class="card-text">Jual beli akun game terbaik dan aman</p>
                 </div>
               </div>
             </button>
           </form>
-          <form action="openmabar.html" class="col-lg-3 col-sm-6 my-2">
-            <button
-              style="border: none; background-color: white"
-            >
+
+          <!-- entertainment -->
+          <form action="entertaiment.html" class="col-lg-3 col-sm-6 my-2">
+            <button style="border: none; background-color: white">
               <div class="card card-service yellow py-4">
                 <div class="card-body">
-                  <i class="bi bi-controller display-5"></i>
-                  <h5 class="card-title mt-3">Open Mabar</h5>
-                  <p class="card-text">Mabar dengan penjoki dan Pro Player</p>
+                  <i class="bi bi-basket display-5"></i>
+                  <h5 class="card-title mt-3">Entertainment</h5>
+                  <p class="card-text">
+                    Langganan aplikasi Entertain favoritmu disini
+                  </p>
                 </div>
               </div>
             </button>
           </form>
+
+          <!-- komplain -->
           <form action="komplen.html" class="col-lg-3 col-sm-6 my-2">
-            <button
-              style="border: none; background-color: white"
-            >
+            <button style="border: none; background-color: white">
               <div class="card card-service yellow py-4">
                 <div class="card-body">
                   <i class="bi bi-exclamation-circle display-5"></i>
@@ -168,38 +294,41 @@
     </section>
 
     <!-- about -->
-    <section id="about" class="py-5">
+    <section id="tentang" class="py-5">
       <div class="container">
-        <div class="row align-item-center">
-          <div class="col-md-6">
-            <img src="assets/home.png" alt="About Image" class="img-fluid" />
+        <div class="row align-items-center">
+          <!-- Gambar kiri -->
+          <div class="col-md-6 text-center mb-4 mb-md-0">
+            <img
+              src="assets/home.png"
+              alt="Tentang Kami"
+              class="img-fluid"
+              style="max-width: 80%"
+            />
           </div>
-          <div class="col-md-6 p-4">
-            <h2 class="title">Tentang Kami</h2>
-            <p>
-              TuanMuda adalah layanan joki game profesional yang hadir untuk
-              membantu para gamer mencapai target dalam permainan favorit mereka
-              tanpa repot, tanpa stres.
+
+          <!-- Teks + statistik kanan -->
+          <div class="col-md-6">
+            <h3 class="fw-bold text-dark">Tentang Kami</h3>
+            <p class="text-secondary">
+              TuanMuda adalah layanan top up game yang hadir untuk memudahkan
+              para player melakukan top up game favoritnya dengan murah, aman
+              dan terpercaya.
             </p>
 
-            <div class="row text-center mt-4">
-              <div class="col-sm-4 my-2">
-                <div class="card py-4 yellow">
-                  <h3>150+</h3>
-                  <p>Pelanggan<br />Percaya</p>
-                </div>
+            <!-- Statistik -->
+            <div class="d-flex flex-wrap gap-3">
+              <div class="stat-card text-center flex-fill">
+                <h4 class="fw-bold mb-0">5k+</h4>
+                <p class="mb-0">Pelanggan<br />Percaya</p>
               </div>
-              <div class="col-sm-4 my-2">
-                <div class="card py-4 yellow">
-                  <h3>300+</h3>
-                  <p>Top Up<br />Game</p>
-                </div>
+              <div class="stat-card text-center flex-fill">
+                <h4 class="fw-bold mb-0">3+</h4>
+                <p class="mb-0">Kerja<br />Sama Game</p>
               </div>
-              <div class="col-sm-4 my-2">
-                <div class="card py-4 yellow">
-                  <h3>5+</h3>
-                  <p>Kerja Sama <br />Pro Player</p>
-                </div>
+              <div class="stat-card text-center flex-fill">
+                <h4 class="fw-bold mb-0">5+</h4>
+                <p class="mb-0">Kerja Sama<br />Penjoki Handal</p>
               </div>
             </div>
           </div>
@@ -208,55 +337,62 @@
     </section>
 
     <!-- portfolio -->
-    <section id="portfolio" class="green py-5">
+    <section id="portfolio" class="py-5" style="background-color: #009688">
       <div class="container">
-        <h2 class="title text-center">Testimonial</h2>
-        <div class="row text-center">
-          <div class="col-12 col-md-3 mb-4">
-            <div class="card portfolio-card">
-              <img
-                src="assets/testi1.png"
-                alt="Portfolio 1"
-                class="portfolio-img"
-              />
-              <div class="portfolio-description">
-                <h5 class="card-title">Joki Game</h5>
+        <h2 class="text-center text-white mb-4">Testimonial</h2>
+        <div class="row justify-content-center g-3">
+          <div class="col-6 col-md-3">
+            <div class="card portfolio-card border-0">
+              <img src="assets/testi4.png" class="portfolio-img" alt="Top Up" />
+              <div
+                class="portfolio-description text-center p-2 fw-bold text-white bg-dark"
+              >
+                Top Up
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-3 mb-4">
-            <div class="card portfolio-card">
+
+          <div class="col-6 col-md-3">
+            <div class="card portfolio-card border-0">
               <img
                 src="assets/testi2.png"
-                alt="Portfolio 2"
                 class="portfolio-img"
+                alt="Joki Game"
               />
-              <div class="portfolio-description">
-                <h5 class="card-title">Top Up</h5>
+              <div
+                class="portfolio-description text-center p-2 fw-bold text-white bg-dark"
+              >
+                Joki Game
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-3 mb-4">
-            <div class="card portfolio-card">
-              <img
-                src="assets/testi4.png"
-                alt="Portfolio 3"
-                class="portfolio-img"
-              />
-              <div class="portfolio-description">
-                <h5 class="card-title">Jual Beli Akun</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-3 mb-4">
-            <div class="card portfolio-card">
+
+          <div class="col-6 col-md-3">
+            <div class="card portfolio-card border-0">
               <img
                 src="assets/testi3.png"
-                alt="Portfolio 3"
                 class="portfolio-img"
+                alt="Jual Beli Akun"
               />
-              <div class="portfolio-description">
-                <h5 class="card-title">Open Mabar</h5>
+              <div
+                class="portfolio-description text-center p-2 fw-bold text-white bg-dark"
+              >
+                Jual Beli Akun
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="card portfolio-card border-0">
+              <img
+                src="assets/testi1.png"
+                class="portfolio-img"
+                alt="Entertainment"
+              />
+              <div
+                class="portfolio-description text-center p-2 fw-bold text-white bg-dark"
+              >
+                Entertainment
               </div>
             </div>
           </div>
