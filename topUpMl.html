@@ -564,55 +564,36 @@
 
           selectedType = btn.id;
           updatePrices();
-        });
-      });
-
-      typeButtons.forEach((btn) => {
-        btn.addEventListener("click", () => {
-          typeButtons.forEach((b) => b.classList.remove("active"));
-          btn.classList.add("active");
-
-          selectedType = btn.id;
-          updatePrices();
 
           document.querySelector("#metod").scrollIntoView({
             behavior: "smooth",
             block: "start",
           });
+
+          cekKelayakan();
         });
       });
 
       // Pilih metode pembayaran
       payButtons.forEach((btn) => {
-        btn.addEventListener("click", (e) => {
+        btn.addEventListener("click", () => {
           payButtons.forEach((b) => b.classList.remove("active"));
           btn.classList.add("active");
 
           selectedPay = btn.dataset.method;
-        });
-      });
 
-      payButtons.forEach((btn) => {
-        btn.addEventListener("click", (e) => {
-          payButtons.forEach((b) => b.classList.remove("active"));
-          btn.classList.add("active");
-
-          selectedPay = btn.dataset.method;
-          cekKelayakan();
-
-          // Scroll halus ke bagian konfirmasi
           document.querySelector("#confirm").scrollIntoView({
             behavior: "smooth",
             block: "start",
           });
+
+          cekKelayakan();
         });
       });
 
       // Update harga sesuai pesanan yang dipilih
       function updatePrices() {
-        const payOptions = document.querySelectorAll(".metod-btn");
-
-        payOptions.forEach((btn) => {
+        payButtons.forEach((btn) => {
           const method = btn.dataset.method;
           const priceSpan = btn.querySelector(".price");
 
